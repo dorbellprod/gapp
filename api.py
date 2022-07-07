@@ -34,6 +34,8 @@ class Goof:
       self.auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
       self.api = tweepy.API(self.auth)
       self.id = self.api.verify_credentials().id
+
+      # TODO: Make channel ID and Twitch username optional via value 'none'.
       self.youtube = YT_CHANNEL_ID; self.twitch = TWITCH_USERNAME
    def tweet(self, contents):
       try:
