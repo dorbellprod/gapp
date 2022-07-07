@@ -1,7 +1,9 @@
 # Goofy App
-Goofy App is a goofy command line substitute for Twitter that I made for myself. It is __not__ a proper Twitter client.
+Goofy App is a goofy command line substitute for Twitter that I made for myself. It is __not__ a proper Twitter client, in that it requires API setup and does not support many standard features. It's just a goofy app.
 ## Features
 Users may Tweet text, optionally with media. Additionally, users may use Goofy App to announce YouTube videos, as well as YouTube and Twitch livestreams.
+## Known Issues
+- ANSI escape codes don't work on Windows. Whoops.
 
 ## Setup
 ### Dependencies
@@ -32,5 +34,8 @@ TWITCH_USERNAME         = your_twitch_username
 If you do not wish to specify a YouTube ID or Twitch username, simply set it to `none`.
 ## Usage
 On Windows, run `./goofy` in the master directory. For a list of flags, run `./goofy --help`.
+## Planned Features
+- [] Ability to set up environment variables with commands.
+- [] `--help` listing program commands as well as flags.
 ## Special Thanks
 - Thanks to [A Crazy Town](https://github.com/acrazytown) for assisting during the livestreamed development of this silly program.
