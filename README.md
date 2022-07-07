@@ -19,7 +19,7 @@ pip install tweepy
 4. Enter your app settings once again. Under *Keys and tokens*, (re)generate your Access Tokens to finalize the permission changes.
 5. You are officially pogging!
 ### Environment Variables
-Create a `.env` file in the master directory. With your Twitter app keys ready, enter them next to their respective variable name:
+Create a `.env` file in the master directory. With your Twitter app keys ready, enter each next to its respective variable name:
 ```
 API_KEY                 = your_api_key
 API_KEY_SECRET          = your_api_key_secret
