@@ -11,7 +11,7 @@ def announce_youtube_video(bot: Goof, description: str, url: str):
     bot.tweet(f"New video, {description}\n{url}")
 def announce_youtube_stream(bot: Goof, description: str):
     bot.tweet(f"Live on YouTube, {description}\nhttps://youtube.com/{bot.youtube}/live")
-def tweet(bot: Goof, contents: str):
+def tweet_text(bot: Goof, contents: str):
     bot.tweet(contents)
 def tweet_media(bot: Goof, path: str, contents: str):
     bot.upload_file(path, contents)
@@ -114,7 +114,7 @@ def main():
             case "quit":
                 sys.exit(0)
             case "tweet":
-                tweet(bot, contents)
+                tweet_text(bot, contents)
             case "tstream":
                 announce_twitch(bot, contents)
             case "ystream":
