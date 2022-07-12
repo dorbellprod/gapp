@@ -35,7 +35,7 @@ If you do not wish to specify a YouTube ID or Twitch username, simply set it to 
 ## Usage
 On Windows, run `./goofy` in the master directory. For a list of flags, run `./goofy --help`.
 ## Planned Features
-- [] Ability to set up environment variables with commands.
-- [] `--help` listing program commands as well as flags.
+- [ ] Ability to set up environment variables with commands.
+- [ ] `--help` listing program commands as well as flags.
 ## Special Thanks
 - Thanks to [A Crazy Town](https://github.com/acrazytown) for assisting during the livestreamed development of this silly program.
