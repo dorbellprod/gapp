@@ -3,7 +3,7 @@ Goofy App is a goofy command line substitute for Twitter that I made for myself.
 ## Features
 Users may Tweet text, optionally with media. Additionally, users may use Goofy App to announce YouTube videos, as well as YouTube and Twitch livestreams.
 ## Known Issues
-- ANSI escape codes don't work on Windows. Whoops.
+- *Some* ANSI escape codes don't work on Windows. Whoops.
 
 ## Setup
 ### Dependencies
