@@ -74,23 +74,23 @@ def main():
         #  APP CODE
         ###
         print("*****************\n*** GOOFY APP ***\n*****************")
-        args = input(">>>").split(); 
-        cmd_raw = args.pop(0); cmd = cmd_raw.rstrip(AUTO_CONFIRM)
+        _args = input(">>>").split(); 
+        cmd_raw = _args.pop(0); cmd = cmd_raw.rstrip(AUTO_CONFIRM)
         
         # Check command for errors.
         if cmd not in COMMAND_ARGC.keys():
             print_error(f"'{cmd_raw}' is not a valid command.")
             wait()
             continue
-        elif len(args) < COMMAND_ARGC[cmd]:
+        elif len(_args) < COMMAND_ARGC[cmd]:
             print_error("Not enough args.")
             wait()
             continue
 
         # Once all is valid, generate extra x arguments ...
-        cmd_args = [args.pop(0) for i in range(COMMAND_ARGC[cmd])]
+        cmd_args = [_args.pop(0) for i in range(COMMAND_ARGC[cmd])]
         # ... leaving the rest to be the caption.
-        contents = ' '.join(args)
+        contents = ' '.join(_args)
         if not cmd_raw.endswith(AUTO_CONFIRM):
             print(f"Command '{cmd}' | Args {cmd_args} | Caption '{contents}'"); 
             consent = input("Confirm with 'go'.\n>>>")
@@ -120,7 +120,7 @@ def main():
             case "ystream":
                 announce_youtube_stream(bot, contents)
             case "media":
-                tweet_media(bot, args[0], contents)
+                tweet_media(bot, cmd_args[0], contents)
         wait()
 if __name__ == "__main__":
     main()

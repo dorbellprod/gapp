@@ -52,6 +52,7 @@ class Goof:
          print_error(f"Error fetching latest tweet: {e}")
    def upload_file(self, path, contents):
       try:
+         print_success(f"Confirmed Tweet:\nImage is '{path}' (relative)\nCaption is '{contents}'")
          assert os.path.exists(path), f"'{path}' is not a valid path."
          m = self.api.media_upload(path)
          self.api.update_status(status=contents, media_ids=[m.media_id])
