@@ -7,13 +7,18 @@ Users may Tweet text, optionally with media. Additionally, users may use Goofy A
 
 ## Setup
 ### Dependencies
-This app requires [Python](https://python.org) to be installed with [pip](https://en.wikipedia.org/wiki/Pip_(package_manager)).
+This app requires [Python 3.7+](https://python.org) to be installed with [pip](https://en.wikipedia.org/wiki/Pip_(package_manager)).
 
 Once you have both installed, run the following commands to install libraries [python-dotenv]() and [tweepy](https://www.tweepy.org/):
 ```
 pip install python-dotenv
 pip install tweepy
 ```
+or install the libraries using pip and the `requirements.txt` file using the command:
+```
+pip install -r requirements.txt
+```
+
 ### Twitter App
 1. Login to the [Twitter developer portal](https://apps.twitter.com) with the account you wish to use. If applicable, link and confirm your phone number.
 2. Under *Projects & Apps > Standalone Apps*, click "Create App". There is a limit of 10 per account. Save your API Keys.
