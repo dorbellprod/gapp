@@ -1,28 +1,6 @@
 # Goofy App
 Goofy App is a goofy command line substitute for Twitter that I made for myself. It is __not__ a proper Twitter client, in that it requires API setup and does not support many standard features. It's just a goofy app.
-## Features
-Users may Tweet text, optionally with media. Additionally, users may use Goofy App to announce YouTube videos, as well as YouTube and Twitch livestreams.
-## Known Issues
-- *Some* ANSI escape codes don't work on Windows. Whoops.
-
-## Setup
-### Dependencies
-This app requires [Python 3.7+](https://python.org) to be installed with [pip](https://en.wikipedia.org/wiki/Pip_(package_manager)).
-
-Once you have both installed, run the following commands to install libraries [python-dotenv]() and [tweepy](https://www.tweepy.org/):
-```
-pip install python-dotenv
-pip install tweepy
-```
-or install the libraries using pip and the `requirements.txt` file using the command:
-```
-pip install -r requirements.txt
-```
-
-### Twitter App
-1. Login to the [Twitter developer portal](https://apps.twitter.com) with the account you wish to use. If applicable, link and confirm your phone number.
-2. Under *Projects & Apps > Standalone Apps*, click "Create App". There is a limit of 10 per account. Save your API Keys.
-3. Click your app on the left panel, and set up user authentication settings. Enable OAuth 1.0a along with permissions to read and write. Finally, enter any URL in the required fields and save.
+## FBOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOORINGOAuth 1.0a along with permissions to read and write. Finally, enter any URL in the required fields and save.
 4. Enter your app settings once again. Under *Keys and tokens*, (re)generate your Access Tokens to finalize the permission changes.
 5. You are officially pogging!
 ### Environment Variables
